@@ -1,0 +1,34 @@
+{
+  "name": "dsh-plugin-kinderplan",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kindergarten Plan Studio (幼儿园计划工作台) — build a semester of monthly plans and the weekly plans derived from them, checked for consistency and exported as .docx in the school's own template.",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "templates",
+    "locale",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
