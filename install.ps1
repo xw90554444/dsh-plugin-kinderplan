@@ -1,4 +1,4 @@
-# 把 dsh-plugin-kinderplan 装进 DSH 的 desktop profile。
+﻿# 把 dsh-plugin-kinderplan 装进 DSH 的 desktop profile。
 #
 # 做四件事，都是幂等的：
 #   1. profile/package.json 加一条 link: 依赖，并把它列进 dsh.profile.bundles
